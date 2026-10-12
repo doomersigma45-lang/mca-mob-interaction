@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "mca_everywhere"
+version = "1.0.0"
+displayName = "MCA Everywhere"
+authors = "Claude"
+description = '''
+Leva o sistema de interação do Minecraft Comes Alive (conversar, piada, presente, abraço, seguir, ficar parado)
+para qualquer mob do jogo, inclusive de outros mods. Funciona com ou sem o MCA instalado; se o MCA estiver
+presente, os presentes dele (data/*/gifts) também valem aqui.
+'''
+
+[[dependencies.mca_everywhere]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mca_everywhere]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mca_everywhere]]
+modId = "mca"
+mandatory = false
+versionRange = "[7.0,)"
+ordering = "AFTER"
+side = "BOTH"
